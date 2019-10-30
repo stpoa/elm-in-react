@@ -1,10 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import logo from "./logo.svg";
 
-import Elm from 'react-elm-components'
-import { Buttons } from './elm/Buttons'
+import Elm from "react-elm-components";
+import ButtonsElm from "./elm/Buttons";
 
-import './App.css';
+import "./App.css";
+
+const { Buttons } = ButtonsElm.Elm;
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Elm src={Buttons} />
         <a
           className="App-link"
           href="https://reactjs.org"
